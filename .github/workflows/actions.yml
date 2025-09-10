@@ -1,0 +1,9 @@
+# modified from template in https://docs.github.com/en/actions/get-started/quickstart
+name: GitHub Actions Assignment
+run-name: testing out GitHub Actions
+on: [push]
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello, world!"
