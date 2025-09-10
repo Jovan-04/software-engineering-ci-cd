@@ -7,3 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "hello, world!"
+      - run: echo "installing uv"
+      - run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - run: echo "installing dependencies"
+      - run: uv sync
+      - run: echo "running tests"
+      - run: uv run pytest -v
+      - run: echo "this job's status is ${{job.status}}"
+
+      
