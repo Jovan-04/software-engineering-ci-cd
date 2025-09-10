@@ -1,5 +1,5 @@
 from game_of_life import Game_Of_Life
-import time, os
+# import time, os
 
 if __name__ == "__main__":
     game = Game_Of_Life(17)
